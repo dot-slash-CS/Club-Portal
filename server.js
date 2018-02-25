@@ -12,6 +12,8 @@ app.get('/', (req,res) => {
   res.render("index");
 });
 
+require('./routes/index.js')(app);
+
 app.listen(8000, () => {
   console.log("Port 8000");
 });
