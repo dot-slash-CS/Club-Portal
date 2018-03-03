@@ -1,3 +1,3 @@
 ## Running the node server:
-open command line, change to project directory  
+At command-prompt, change to project directory and run:
 `nodemon server.js`
