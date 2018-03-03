@@ -42,8 +42,10 @@ sudo apt install github
 ```
 ## Npm:
 ```
-npm install express
-npm install ejs
+npm init
+npm install -g express
+npm install -g ejs
+npm install nodemon
 ```
 
 ## project (git)

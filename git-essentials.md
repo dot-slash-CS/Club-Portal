@@ -15,6 +15,24 @@ https://github.com/dot-slash-CS/Club-Portal
 We can clone the whole project with a simple line (no need to register)
 git clone https://github.com/dot-slash-CS/Club-Portal
 
-We have not decided on which github repository to use.
-For now we will be using this:
-https://github.com/taro220/Node-express-ejs-template
+More git tutorial:
+https://github.com/dot-slash-CS/Git-Tutorial
+
+Once you get the git clone working, now you may want to upload files to it.
+First please make sure you register on github.
+
+go to newly acquired repository in command line:
+cd Club-Portal
+copy new files: cp ~/Desktop/newfile.txt .
+
+Add the file to local git repo:
+git add newfile.txt
+
+Commit the new file:
+git commit -m "new file added"
+
+Now, you need to set up connection from local repository to the github (remote repository):
+git remote add origin master
+(when git creates a local repository <directory>, its default name is master. we need a new name for remote : we give it origin )
+Now it is ready to be pushed to remote server, we just named: origin. in fact, the following command is enough. 
+git push
