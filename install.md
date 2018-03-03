@@ -38,7 +38,7 @@ https://github.com/taro220/guides/blob/master/macinstall.txt
 ## Linux:
 ```
 sudo apt install node
-sudo apt install github
+sudo apt install git
 ```
 ## Npm:
 ```
