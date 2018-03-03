@@ -31,10 +31,14 @@ Add the file to local git repo:
 Commit the new file:
 `git commit -m "new file added"`
 
-Now, you need to set up connection from local repository to the github (remote repository):
-`git remote add origin master`
+If you cloned the github repository and you are uploading the newfile back to it, you don't need to run the following. This command set up connection from local repository to the github (remote repository):
+
+`git remote add remote_name`
+
 (when git creates a local repository <directory>, its default name is master. we need a new name for remote : we give it origin )
 Now it is ready to be pushed to remote server, we just named: origin. in fact, the following command is enough.
+
 `git push`
+`git` understands that you are pushing your current repository(the current directory you are in) to a remote repository (it remembers if you `git clone` from github; so no need to specify where it is pushing to.)
 
 ---------
