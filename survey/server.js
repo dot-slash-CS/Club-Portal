@@ -1,7 +1,21 @@
 var express = require("express"),
     path = require("path"),
     bodyParser = require('body-parser'),
+    mongoose = require('mongoose'),
     app = express();
+
+
+mongoose.Promise = global.Promise;
+require('./config/mongoose.js');
+mongoose.connect('mongodb://localhost/survey',function(err){
+  if (err){
+    console.log('Could not connect to mongodb...');
+
+  }
+  else{
+    console.log('Successfully connected to mongodb ...');
+  }
+})
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, "./static")));
