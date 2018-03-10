@@ -10,3 +10,5 @@ create survey directory
 npm install express ejs nodemon mongoose
 atom server.js
 ```
+You can also download the code I am currently working on by
+`git merge origin/master`
