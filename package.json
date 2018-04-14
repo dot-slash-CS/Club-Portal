@@ -1,0 +1,25 @@
+{
+  "name": "node-express-ejs-template",
+  "version": "1.0.0",
+  "description": "You need to have node.js installed before you try to run this server. If you do not have node, here is a writeup for iOS. https://github.com/taro220/guides",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taro220/Node-express-ejs-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taro220/Node-express-ejs-template/issues"
+  },
+  "homepage": "https://github.com/taro220/Node-express-ejs-template#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.13"
+  }
+}
