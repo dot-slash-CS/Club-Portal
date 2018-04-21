@@ -9,5 +9,13 @@ module.exports = function (app) {
   app.post('/home', (req,res) => {
     console.log(req.body.name);
     res.render('home2', {name: req.body.name});
-  })
+  });
+
+  app.get('/clubList', (req,res) => {
+    res.render('clubList');
+  });
+
+  app.get('/index', (req,res) => {
+    res.render('index');
+  });
 }
