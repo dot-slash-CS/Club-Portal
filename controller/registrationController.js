@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var bcrypt = require('bcrypt'),
+var bcrypt = require('bcrypt-nodejs'),
 User = mongoose.model('User');
 
 exports.register = (req,res) => {
