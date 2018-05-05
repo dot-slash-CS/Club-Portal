@@ -18,4 +18,8 @@ module.exports = function (app) {
   app.get('/index', (req,res) => {
     res.render('index');
   });
+
+  app.get('/login', (req,res) => {
+    res.render('login');
+  });
 }
