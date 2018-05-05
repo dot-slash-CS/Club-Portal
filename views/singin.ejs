@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="validations.js"></script>
+	<title>Sign Up Form</title>
+</head>
+<body>
+	<form action="http://localhost:8000/home" onsubmit="validatecommentform()" method="post">
+	<h1><big><b>Club Registration Form</b></big></h1>
+	<p><i>Welcome to the Ohlone College Club Sign Up Page. Please enter your club's information if you are interested in adding your club to the Ohlone College Club Website.</i> </p>
+<form>
+	<table>
+		<tr>
+			<td>
+				<br>
+				<b>Club Name:</b>
+			</td>
+			<td>
+				<br>
+				<input id="commentname" onkeyup="validatename()" type="text" placeholder="Name" name="cname"> <label id="commentnameprompt"> </label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Club Email:</b>
+			</td>
+			<td>
+				<input id="commentemail" onkeyup="validateemail()" type="text" placeholder="Email" name="cemail"> <label id="commentemailprompt"> </label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Password:</b>
+			</td>
+			<td>
+				<input id="commentpassword" onkeyup="validatepassword()" type="Password" placeholder="Password" name="cpassword"> <label id="commentpasswordprompt"> </label>
+			</td>
+					<br>
+		<tr>
+			<td>
+				<b>Description:</b>
+			</td>
+			<td>
+				<textarea id="commentdescription" onkeyup="validatedescription()" placeholder="Club Description" rows="4" cols="50" name="cdesc"></textarea><label id="commentdescriptionprompt"></label>
+			</td>
+		</tr>
+			</table>
+			<input type="button" value="Submit" onclick="validatecommentform()"><label id="commentformprompt"></label>
+</form>
+</body>
+</html>

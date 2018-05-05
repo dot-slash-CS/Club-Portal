@@ -1,25 +1,23 @@
+var register = require("../controller/registrationController.js")
 module.exports = function (app) {
-  //These are the routes. There are two main types of HTTP "Verbs", Get and Post
-  //Get is when you access the route through the URL.
-  //To use this "get" route, go to localhost:8000/home
   app.get('/home', (req,res) => {
-    res.render('home');
+    res.render('signin');
   });
 
-  app.post('/home', (req,res) => {
-    console.log(req.body.name);
-    res.render('home2', {name: req.body.name});
+ app.get('/route', (req,res) => {
+    console.log(req.body);
+    res.render('signin');
   });
 
-  app.get('/clubList', (req,res) => {
-    res.render('clubList');
-  });
+  app.post('/register', register.register);
 
-  app.get('/index', (req,res) => {
-    res.render('index');
+  app.get('/confirmation', (req,res) => {
+    res.render('login');
   });
 
   app.get('/login', (req,res) => {
     res.render('login');
   });
+
+  app.post('/login', register.login);
 }
